@@ -13,3 +13,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+/*? task 2 */
+/* .item {
+  list-style: none;
+}
+
+.statistic-card{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.statistic-card:not(:first-child) {
+  border-left: none;
+}
+
+.label{
+  font-size: 19px;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.percentage{
+  font-size: 24px;
+}
+
+.statistics{
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-list{
+  padding: 0;
+  justify-content: center;
+  display: flex;
+} */

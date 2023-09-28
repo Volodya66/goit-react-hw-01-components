@@ -1,0 +1,44 @@
+.item {
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.card:not(:first-child) {
+    border-left: none;
+}
+
+.label {
+    font-size: 19px;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.percentage {
+    font-size: 24px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
