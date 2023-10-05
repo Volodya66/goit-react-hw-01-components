@@ -1,0 +1,41 @@
+
+
+.ThName{
+    width: 300px;
+}
+
+.ThResult{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 700px;
+}
+
+.tr:nth-child(2n){
+    background-color: darkgrey;
+}
+
+.tr{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: auto;
+}
+
+.TdName{
+    display: block;
+    padding-left: 40px;
+    width: 300px;
+}
+
+.TdResult{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}

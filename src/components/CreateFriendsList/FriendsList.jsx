@@ -2,7 +2,8 @@
 import PropTypes from "prop-types";
 import css from "./Friends.module.css"
 
-export const CreateMarkupFriends = ({events}) => {
+export const CreateMarkupFriends = ({ events }) => {
+ 
    const markup = (
     <ul className={css.list}>
       {events.map(({ avatar, name, isOnline, id }) => (
@@ -20,7 +21,7 @@ export const CreateMarkupFriends = ({events}) => {
    
 CreateMarkupFriends.propTypes = {
   avatar: PropTypes.string,
-  name: PropTypes.string.isRequired,
-    isOnline: PropTypes.number.isRequired,
-    id : PropTypes.number.isRequired,
+  name: PropTypes.string,
+    isOnline: PropTypes.bool,
+    id : PropTypes.number,
 };
