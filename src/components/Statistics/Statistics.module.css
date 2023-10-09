@@ -25,6 +25,8 @@
 .title {
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
 
 }
 
@@ -41,4 +43,5 @@
     padding: 0;
     justify-content: center;
     display: flex;
+    margin: 0;
 }

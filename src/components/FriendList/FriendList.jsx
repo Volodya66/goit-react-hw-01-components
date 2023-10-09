@@ -1,12 +1,12 @@
 
 import PropTypes from "prop-types";
-import css from "./Friends.module.css"
+import css from "./FriendList.module.css"
 
-export const CreateMarkupFriends = ({ events }) => {
+export const FriendList  = ({ friends }) => {
  
    const markup = (
     <ul className={css.list}>
-      {events.map(({ avatar, name, isOnline, id }) => (
+      {friends.map(({ avatar, name, isOnline, id }) => (
         <li className={css.item} key={id}>
           <span className={css[isOnline]}></span>
           <img className={css.avatar} src={avatar} alt={name} width="48" />
@@ -19,7 +19,7 @@ export const CreateMarkupFriends = ({ events }) => {
   return markup;
 };
    
-CreateMarkupFriends.propTypes = {
+FriendList.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string,
     isOnline: PropTypes.bool,

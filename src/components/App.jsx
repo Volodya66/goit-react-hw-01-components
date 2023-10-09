@@ -1,5 +1,14 @@
-import { CardProfile } from './SocialNetworkProfile/UserCard'
-import userInfo from "../DataJSON/user.json"
+import { CardProfile } from './Profile/Profile'
+import user from "../data-json/user.json"
+
+import { Statistics } from './Statistics/Statistics'
+import statisticData from '../data-json/statistics.json';
+
+import {FriendList } from './FriendList/FriendList'
+import friends from '../data-json/friends.json'
+
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../data-json/transactions.json'
 
 
 
@@ -9,17 +18,35 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        gap: 40,
         justifyContent: 'center',
-        // flexDirection: "column",
+        flexDirection: "column",
         alignItems: 'center',
         fontSize: 40,
         color: '#010101'
       }}
     >
-      <CardProfile events={userInfo} />
+      <CardProfile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+        stats={user.stats}
+      />
+
+      <Statistics
+  title="Upload stats"
+  stats={statisticData}
+      />
   
+      <FriendList
+  friends={friends}
+      />
       
-      
+      <TransactionHistory
+    items={transactions}
+      />
+
     </div>
     
   );
