@@ -1,12 +1,6 @@
 import css from './Statistics.module.css'
 import PropTypes from "prop-types";
 
-export const TitleStatics = ({ title }) => {
-    
-    return title.length >0? <h2 className={css.title} >{title}</h2> : ("")
-       
-    
-};
 
 export function Statistics({stats,title}) {
     // console.log("title", title)
@@ -14,7 +8,7 @@ export function Statistics({stats,title}) {
   
     const markup = (
 <div>
-    {title.length > 0 && (<h2 className={css.title}>{title}</h2>)}
+    {title && (<h2 className={css.title}>{title}</h2>)}
         
     <ul className={css.list}>
    { stats.map(({ id, label, percentage }) =>( 
@@ -33,9 +27,7 @@ export function Statistics({stats,title}) {
 
 
 
-TitleStatics.propTypes = {
-    title: PropTypes.string
-};
+
 
 Statistics.propTypes = {
     id: PropTypes.string,

@@ -16,14 +16,14 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         gap: 40,
         justifyContent: 'center',
         flexDirection: "column",
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+
       }}
     >
       <CardProfile

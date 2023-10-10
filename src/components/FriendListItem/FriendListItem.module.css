@@ -1,0 +1,38 @@
+.item {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    gap: 30px;
+    background-color: rgb(246, 246, 235);
+    border: 1px solid cornsilk;
+    border-radius: 15px;
+    padding: 15px 0 10px 15px;
+}
+
+
+.avatar {
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+
+.true {
+    display: flex;
+
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.false {
+    display: block;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.name {
+    margin: 0;
+}

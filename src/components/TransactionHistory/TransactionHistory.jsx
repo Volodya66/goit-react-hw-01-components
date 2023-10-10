@@ -1,21 +1,8 @@
 import css from './TransactionHistory.module.css'
 
-// function HeaderTable() {
-
-//     const header = (
-//         <thead className={css.thead}>
-//             <tr>
-//                 <th className={css.ThName}>Type</th>
-//                 <th className={css.ThResult}>Amount</th>
-//                 <th className={css.ThResult}>Currency</th>
-//             </tr>
-//         </thead>
-//     );
-//     return header;
-// }
 
 export default function TransactionHistory({ items }) {
-    //  console.log(items)
+ 
 return (
         <>
             <table className={css.table}>
